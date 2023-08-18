@@ -77,3 +77,41 @@ for (let item = 0; item < removebtn.length; item += 1) {
     window.location.reload();
   });
 }
+
+const dateContainer = document.getElementById('date');
+const currentdate = new Date();
+const month = (currentdate.getMonth() + 1);
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+const datetime = `${months[month - 1]} ${
+  currentdate.getDate()}th ${
+  currentdate.getFullYear()}, @ ${
+  currentdate.getHours()}:${
+  currentdate.getMinutes()}:${
+  currentdate.getSeconds()}`;
+dateContainer.textContent = datetime;
+
+const list = document.querySelector('#list');
+const add = document.querySelector('#new');
+const contact = document.querySelector('#contact');
+const addSection = document.querySelector('.contact-form');
+const listSection = document.querySelector('.list-part');
+const contactSection = document.querySelector('.contact');
+
+add.addEventListener('click', () => {
+  addSection.style.display = 'block';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+list.addEventListener('click', () => {
+  addSection.style.display = 'none';
+  listSection.style.display = 'block';
+  contactSection.style.display = 'none';
+});
+
+contact.addEventListener('click', () => {
+  contactSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  addSection.style.display = 'none';
+});
