@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <script src="localStorage.js" defer></script>
     <title>AWESOME BOOKS</title>
 </head>
 <body>
-    <div class="books-container">
+    <h3 class="heading">All awesome Books</h3>
+    <div class="books-container-one">
+        
+        <ul class="books-container">
+
+
+        </ul>
+
+
 
     </div>
+    <div class="line-container"><hr class="line"></div>
+    
     <form action="post" class="contact-form">
+        <h3>Add a new book</h2>
         <div>
             <input type="text" id="title" placeholder="title">
         </div>
@@ -21,9 +33,11 @@
             <input type="text" id="authur" placeholder="authur">
         </div>
         <br>
+        <div class="button-container">
+            <button type="button" id="addBtn">Add</button>
+        </div>
         
         
-        <button type="button" id="addBtn">Add</button>
     </form>
 </body>
 </html>
