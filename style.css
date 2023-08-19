@@ -4,6 +4,7 @@ body {
   border: 0;
   padding: 0;
   margin-block-start: 0;
+  width: 100%;
 }
 
 .heading {
@@ -37,6 +38,8 @@ div.books-container-one ul.books-container div.item:nth-child(odd) {
 
 .line {
   margin: 1% 47%;
+  background-color: black;
+  border: solid 1px black;
 }
 
 .contact-form {
@@ -63,4 +66,82 @@ div.books-container-one ul.books-container div.item:nth-child(odd) {
 
 input {
   border-color: black;
+}
+
+/* header */
+
+#nav-bar {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: 2% 2%;
+}
+
+#header {
+  width: 100%;
+}
+
+.menu-list {
+  display: flex;
+  padding: 0;
+  gap: 5%;
+  width: 40%;
+  justify-content: end;
+  padding-right: 2%;
+}
+
+.text-container {
+  width: 40%;
+}
+
+.linee {
+  height: 30px;
+  width: 1px;
+  background-color: black;
+  border: solid 1px black;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.titlee {
+  padding-left: 2%;
+}
+
+#date {
+  display: flex;
+  justify-content: end;
+  padding-right: 2%;
+}
+
+.copyright {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 2% 0 2%;
+  position: absolute;
+  bottom: 30px;
+}
+
+.copyright p {
+  padding-left: 2%;
+}
+
+.contact {
+  padding: 0 35%;
+}
+
+.contact h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form,
+.list-part,
+.contact {
+  display: none;
 }
